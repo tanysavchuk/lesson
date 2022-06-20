@@ -1,0 +1,17 @@
+.cards-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.w-95pr {
+  width: 95%;
+}
+.m-auto {
+  margin: auto;
+}
+.p-35px {
+  padding: 35px;
+}
+.ta-center {
+  text-align: center;
+}

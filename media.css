@@ -1,0 +1,62 @@
+/*
+    'sm': '640px' => @media (min-width: 640px) { ... } 1 блока на строку и добавить бордер черный и маржин ботом для всех
+
+    'md': '768px' => @media (min-width: 768px) { ... } 1 блока на строку
+
+    'lg': '1024px' => @media (min-width: 1024px) { ... } 2 блока на строку
+
+    'xl': '1280px' => @media (min-width: 1280px) { ... } 3 блока на строку
+
+    '2xl': '1536px' => @media (min-width: 1536px) { ... } все блоки должны быть в одну строку
+*/
+.bg-green {
+  background: green;
+}
+.bg-red {
+  background: red;
+}
+.bg-black {
+  background: black;
+}
+.bg-yellow {
+  background: yellow;
+}
+.bg-purple {
+  background: purple;
+}
+.bg-orange {
+  background: orange;
+}
+.container {
+  display: flex;
+}
+.w-full {
+  width: 100%;
+}
+
+@media (max-width: 1280px) {
+  .block-info {
+    width: 33.3%;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1024px) {
+  .block-info {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .block-info {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .block-info {
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 5px;
+  }
+}

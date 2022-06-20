@@ -1,0 +1,30 @@
+.container-inner {
+  width: 1200px;
+}
+.d-flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.w-100pr {
+  width: 100%;
+}
+.w-25pr {
+  width: 25%;
+}
+.h-300px {
+  height: 300px;
+}
+.h-200px {
+  height: 200px;
+}
+.p-10px {
+  padding: 10px;
+}
+.flex-wrap_wrap {
+  flex-wrap: wrap;
+}
+.p-0-30px {
+  padding: 0 30px;
+}

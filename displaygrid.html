@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="displaygrid.css" />
+    <link rel="stylesheet" href="redstore.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-inner header">
+        <div class="d-flex jc-spase-between m-top-30px">
+          <div class="d-block jc-center w-100px h-60px p-3px position-relative">
+            <p class="ff-monospace fs-18px fw-700 border-3px-black b-radius-3px">
+              <span class="red-logo c-red">RED</span>STORE
+            </p>
+            <div class="position-relative b-white bottom-7px w-55px left-17px h-10px p-left-05px">
+              <p class="ff-cursive fs-9px">athietes choice</p>
+            </div>
+          </div>
+          <nav class="w-spacing-15px nav-wrap">
+            <a class="nav t-decoration-none c-darkgray ff-monospace fs-15px" href="#"> Home</a>
+            <a class="nav t-decoration-none c-darkgray ff-monospace fs-15px" href="#"> Products </a>
+            <a class="nav t-decoration-none c-darkgray ff-monospace fs-15px" href="#"> About </a>
+            <a class="nav t-decoration-none c-darkgray ff-monospace fs-15px" href="#"> Contact </a>
+            <a class="nav t-decoration-none c-darkgray ff-monospace fs-15px" href="#"> Account </a>
+            <a class="nav t-decoration-none c-darkgray ff-monospacefs-15px" href="#"> Basket </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-inner d-flex jc-center">
+        <div id="userName">dsdsd</div>
+        <div class="d-flex jc-spase-between m-top-bottom-50px w-90pr">
+          <div class="">
+            <h2 class="ff-monospace fs-25px fw-900">All Products</h2>
+          </div>
+          <div class="d-flex ai-center border-1px-red">
+            <form action="#" method="post" enctype="multipart/form-data"></form>
+
+            <div>
+              <select class="border-none outline-none" name="sort By">
+                <option selected value="" disabled hidden>Sort By</option>
+                <option value="cheap">Cheap at first</option>
+                <option value="expensive">Expensive at first</option>
+                <option value="popularity">By popularity</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-inner">
+        <div class="cards-wrap m-auto w-95pr" id="productsContainer"></div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js">
+    //var - это глобальная переменная
+    //let - это с блочной областью видимости
+    //const - неизменяемая с блочной областью видимости
+
+    // let user = {
+    //   firstName: 'Taniy',
+    //   lastName: 'Savchuk',
+    //   movies: ['movies1', 'movies2', 'movies3'],
+    //   friends: [
+    //     {
+    //       firstName: 'Taniy',
+    //       lastName: 'Savchuk',
+    //     },
+    //     {
+    //       firstName: 'Taniy',
+    //       lastName: 'Savchuk',
+    //     },
+    //   ],
+    //   getUserFullName() {
+    //     return user.firstName + ' ' + user.lastName
+    //   },
+    //   addFavoriteMovie(movie) {
+    //     this.movies.push(movie)
+    //   },
+    // }
+    // // string, number/intenger, array, object
+    // let userNameEl = document.getElementById('userName')
+    // userNameEl.innerText = user.getUserFullName()
+
+    //var products = [
+    // {
+    //name: 'sneakers',
+    // img: 'sneakers1.jpeg',
+    // price: '50$',
+    // },
+    // {
+    //  name: 'sneakers',
+    // img: 'sneakers1.jpeg',
+    // price: '50$',
+    // },
+    // {
+    // name: 'sneakers',
+    // img: 'sneakers1.jpeg',
+    //  price: '50$',
+    // },
+    //  {
+    // name: 'sneakers',
+    // img: 'sneakers1.jpeg',
+    // price: '50$',
+    // },
+    // {
+    // name: 'sneakers',
+    // img: 'sneakers1.jpeg',
+    // price: '50$',
+    // },
+    // {
+    // name: 'sneakers',
+    // img: 'sneakers1.jpeg',
+    // price: '50$',
+    // },
+    //]
+    // const productsContainer = document.getElementById('productsContainer')
+    //let propductsHtml = ''
+
+    // for (let i = 0; products.length - 1 >= i; i++) {
+    //propductsHtml += `
+    //    <div class="p-35px ta-center">
+    // <div class="card-img">
+    //   <img class="h-300px" src="${products[i].img}" alt="" />
+    //  </div>
+    //  <div class="card-name"><p>${products[i].name}</p></div>
+    //  <div class="rating_block">
+    //     <input name="rating" value="5" id="rating_5" type="radio" />
+    //     <label for="rating_5" class="label_rating"></label>
+
+    //     <input name="rating" value="4" id="rating_4" type="radio" />
+    //     <label for="rating_4" class="label_rating"></label>
+
+    //    <input name="rating" value="3" id="rating_3" type="radio" />
+    //    <label for="rating_3" class="label_rating"></label>
+
+    //   <input name="rating" value="2" id="rating_2" type="radio" />
+    //    <label for="rating_2" class="label_rating"></label>
+
+    //   <input name="rating" value="1" id="rating_1" type="radio" />
+    //   <label for="rating_1" class="label_rating"></label>
+    // </div>
+    //  <div class="price"><p>${products[i].price}</p></div>
+    //  </div>}
+  </script>
+</html>
