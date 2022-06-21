@@ -645,3 +645,18 @@ function showConsole() {
 }
 button.onclick = showConsole
 */
+
+const people = [
+  {name: 'Ivan', age: 20, budget: 40000},
+  {name: 'Vasya', age: 30, budget: 70000},
+  {name: 'Katya', age: 18, budget: 20000},
+  {name: 'Tanya', age: 40, budget: 20000},
+  {name: 'Petya', age: 34, budget: 50000},
+]
+for (let i = 0; i < people.length; i++) {
+  console.log(people[i])
+}
+people.forEach(function (person, index, pArr) {
+  console.log(person)
+})
+people.forEach((person) => console.log(person))
